@@ -8,10 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/list", listRoutes);
-
-// app.get("/", (req, res) => {
-//   return res.json("Start with list");
-// });
+//app.use(listRoutes);
 
 app.listen("3000", () => {
   console.log("App is listening on port 3000");
