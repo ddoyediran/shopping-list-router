@@ -49,12 +49,12 @@ listRouter
   });
 
 // // GET all the items on the shopping list
-// listRouter.get("/list", (req, res) => {
+// listRouter.get("/items", (req, res) => {
 //   return res.status(200).json({ items: lists });
 // });
 
 // // GET a single item from the list
-// listRouter.get("/list/:id", (req, res) => {
+// listRouter.get("/items/:id", (req, res) => {
 //   const list = lists.find((item) => {
 //     return item.id === parseInt(req.params.id);
 //   });
@@ -62,13 +62,13 @@ listRouter
 // });
 
 // // POST an item to the shopping list
-// listRouter.post("/list", (req, res) => {
+// listRouter.post("/items", (req, res) => {
 //   lists.push({ ...req.body, id: ++id });
 //   return res.status(200).json({ message: "Item added to list" });
 // });
 
 // // PATCH an item on the list
-// listRouter.patch("/list/:id", (req, res) => {
+// listRouter.patch("/items/:id", (req, res) => {
 //   const list = lists.find((item) => {
 //     return item.id === parseInt(req.params.id);
 //   });
@@ -81,7 +81,7 @@ listRouter
 // });
 
 // // DELETE an item from the shopping list
-// listRouter.delete("/list/:id", (req, res) => {
+// listRouter.delete("/items/:id", (req, res) => {
 //   const itemIndex = lists.findIndex((item) => {
 //     return (item.id = parseInt(req.params.id)); // get the index of the item
 //   });

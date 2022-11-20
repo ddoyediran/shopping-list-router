@@ -7,7 +7,7 @@ const listRoutes = require("./routes");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/list", listRoutes);
+app.use("/items", listRoutes);
 //app.use(listRoutes);
 
 app.listen("3000", () => {
