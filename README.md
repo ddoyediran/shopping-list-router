@@ -1,4 +1,4 @@
-## Shopping List Restful API
+## Shopping List API endpoints
 
 ### Description
 
